@@ -23,6 +23,8 @@ new Term ('boolean', 'What is a Boolean?', 'Is True or False statement only');
 new Term ('Object', 'What is an Object?', 'Objects group together a set of variables  and functions to create a model');
 new Term ('constructor', 'What is a constructor?', 'It\'s an object factory that passes in data and automatically creates our instance');
 
+
+
 console.log(allCards);
 
 
