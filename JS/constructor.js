@@ -28,7 +28,7 @@ new Term ('Method','A Method is a function that is used in conjuction with an ob
 new Term ('.push', 'The .push Method removes item from the end of an array','What is the .push Method?'); 
 new Term ('.shift', 'The .shift Method removes items from the beginning of an array', 'What is the .shift Method?');
 new Term ('.push', 'The .push Method adds items to the end of an array', 'What is the .push Method?');
-new Term ('.unshift', 'The .unshift method adds items to the biginning of an array', 'What is the .unshift Method?');
+new Term ('.unshift', 'The .unshift method adds items to the beginning of an array', 'What is the .unshift Method?');
 new Term ('Bracket Notation', 'Bracket Notation is a way to access a property of an object which uses square brackets. With Bracket Notation the property name can be a string', 'What is Bracket Notation?');
 new Term ('DOM', 'The DOM, or Document Object Model, is a programming interface for web documents. It represents an HTML document that can be manipulated by JavaScript and other programs', 'What is the DOM?' );
 new Term ('Array', 'An Array is a collection of items stored under a single variable that can be accessed by functions within JavaScript?', 'What is an Array?');
