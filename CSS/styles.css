@@ -6,6 +6,7 @@ nav{
   padding: 15px;
   align-content:space-between;
 }
+
 #titleSplash{
   display: flex;
 justify-content: space-evenly;
@@ -16,8 +17,9 @@ color:#EAE2B7
 
 #linkBox{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 font-size: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a{text-decoration: none;
@@ -28,20 +30,21 @@ nav a:hover {
   /* background-color: rgb(134, 75, 7); */
   color: #F77F00;
 }
+
 body{
   margin:40px;
   background-color: #003049;
 }
+
 /* Cards */
 
 #card-elem {
-  
   width: 90%;
   display: flex; 
   justify-content: space-around;
 }
+
 section{
-  
   margin:100px;
   flex-wrap: wrap;
   height:80%;
@@ -50,15 +53,12 @@ section{
   /*  align-content:space-between; */
   /*   display:inline-block; */
 }
+
 p #card-elem{
   color:#003049;
   text-shadow: #540B0E;
 }
 
-#usPg{
-  color:#EAE2B7;
-  font-size: 100px;
-}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   border-radius: 10% / 50%;
@@ -76,8 +76,8 @@ p #card-elem{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  height: fit-content; /*fit-content allows the elements to change sie to fit the text*/
   
-border-radius: 25% 10%;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -92,37 +92,38 @@ border-radius: 25% 10%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  
-  border-radius: 25% 10%;
+  height: 200px;
+  height: fit-content;/*fit-content allows the elements to change sie to fit the text*/
+
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   /* background-color: #bbb;*/
   border: solid #FCBF49 5px;
-  color: white; 
+  color: #003049; 
   font-size: 50px;
   padding: 30px;
   /* text-decoration: underline; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #F77F00;
   /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
     
-    border-radius: 25% 10%;
+  
 }
 
 /* Style the back side */
 .flip-card-back {
-  color: black; 
+  color: #003049; 
   border: solid #f77F00 5px;
   font-size: 30px;
   padding: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #FCBF49;
   /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
   transform: rotateY(180deg);
     
-    border-radius: 25% 10%;
+  
 }
 
 
@@ -157,9 +158,6 @@ button:active {
   transform: translateY(3px);
 }
 
-
-
-
 /* Footer Section */
 img{
   width: 60px;
@@ -168,4 +166,11 @@ img{
   padding: 25px;
   align-content:space-between;
   display:inline-block;
+}
+
+/* About Us */
+
+#usPg{
+  color:#EAE2B7;
+  font-size: 100px;
 }
