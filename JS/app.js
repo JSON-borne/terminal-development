@@ -38,6 +38,8 @@ function renderCards() { //function to choose randome cards to be displayed on i
   let rand2 = shownCards.pop();
   let rand3 = shownCards.pop();
  
+  //DOM push to the window for cards
+  firstTerm.textContent = allCards[rand1].term;
   firstDef.textContent = allCards[rand1].definition;
   secondTerm.textContent = allCards[rand2].term;
   secondDef.textContent = allCards[rand2].definition;
@@ -45,33 +47,11 @@ function renderCards() { //function to choose randome cards to be displayed on i
   thirdDef.textContent = allCards[rand3].definition;
 }
 
+// Function for the click that will refresh out cards
 function handleClick(event) {
-
   renderCards();
 }
 // button listener on html
 button.addEventListener('click', handleClick);
 
 renderCards();
-
-///////////////////test page
-
-// let testForm = document.getElementById('test-form');
-
-// let quizQ = document.getElementById('question');
-// let quizCorrectAnswer = document.getElementById('allCards.definition');
-// let wrongAOne = document.getElementById(allCards.wrongAnswers[0]);
-// let wrongATwo = document.getElementById(allCards.wrongAnswers[1]);
-// let wrongAThree = document.getElementById(allCards.wrongAnswers[2]);
-
-// quizQ.textContent = document.getElementById(allCards[0].question[0]);
-// console.log(allCards[0]);
-// quizQ.textContent = allCards[0].question;
-// console.log(allCards);
-
-
-
-
-
-
-// button.addEventListener('click', handleClick);
