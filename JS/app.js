@@ -25,6 +25,7 @@ let shownCards = [];//holds shown cards
 function renderCards() { //function to choose randome cards to be displayed on index
 
   while (shownCards.length < 9) {//as long as //set this to 6 numbers also
+    
     let randomnums = getRandomIndex();
     while (!shownCards.includes(randomnums)) { //if the number is not present '!' 
       shownCards.unshift(randomnums);
@@ -37,7 +38,6 @@ function renderCards() { //function to choose randome cards to be displayed on i
   let rand2 = shownCards.pop();
   let rand3 = shownCards.pop();
  
-  firstTerm.textContent = allCards[rand1].term;
   firstDef.textContent = allCards[rand1].definition;
   secondTerm.textContent = allCards[rand2].term;
   secondDef.textContent = allCards[rand2].definition;
@@ -53,3 +53,7 @@ function handleClick(event) {
 button.addEventListener('click', handleClick);
 
 renderCards();
+
+///////////////////test page
+
+let testForm = document.getElementById('test-form');
