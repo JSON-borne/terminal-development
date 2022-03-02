@@ -1,10 +1,9 @@
 'use strict'
-let indexWindow = document.getElementById('card-elem');
+// let indexWindow = document.getElementById('card-elem');
 
 let allCards = [];
 let allQuestions = [];
 //Golbal array for all answers needed?//
-
 
 function Term(term, definition, question){
   //cards
@@ -35,14 +34,4 @@ new Term ('Array', 'An Array is a collection of items stored under a single vari
 new Term ('Local Storage','Local is a property that allows JavaScript to save key-value pairs in a web browser between sessions.', 'What is Local Storage?');
 new Term ('Key/Value Pair', 'A Key/Value Pair is a property of an object where the Key is the name of the property, and the value is the information contained within the property', 'What is a key Value Pair?');
 
-
 console.log(allCards);
-
-
-
-
- 
-
-
-
-

@@ -1,45 +1,55 @@
 'use strict'
 
-let createLi = document.getElementById('card-elem');
-let globalVar = allCards;
-// Term.prototype.render = function(){
-// console.log(this.term);
+// let createLi = document.getElementById('card-elem');
 
+//Ref to the HTML for randomly chosen cards
+let firstTerm = document.getElementById('term1');
+let firstDef = document.getElementById('def1');
 
+let secondTerm = document.getElementById('term2');
+let secondDef = document.getElementById('def2');
 
+let thirdTerm = document.getElementById('term3');
+let thirdDef = document.getElementById('def3');
+
+//creating button for refreshing cards
+let button = document.getElementById('button');
+
+//random number generator
 function getRandomIndex() {///Random number generator
   return Math.floor(Math.random() * allCards.length)
 }
 
 
 let shownCards = [];//holds shown cards
+function renderCards() { //function to choose randome cards to be displayed on index
 
-function renderCards() {
-  if (shownCards.length > 6){
-    delete shownCards[6];
-    delete shownCards[7];
-    delete shownCards[8];
-  }
-
-  while (shownCards.length < 6) {//as long as //set this to 6 numbers also
+  while (shownCards.length < 9) {//as long as //set this to 6 numbers also
     let randomnums = getRandomIndex();
     while (!shownCards.includes(randomnums)) { //if the number is not present '!' 
       shownCards.unshift(randomnums);
     }
-  
   }
     
   console.log(shownCards);
 
-  for(let i = 0; i < 3; i++){
-    let newLi = document.createElement('li');
-    let defLi = document.createElement('li');
-    newLi.textContent = allCards[shownCards[i]].term;
-    defLi.textContent = allCards[shownCards[i]].definition;
-    createLi.appendChild(newLi);
-    createLi.appendChild(defLi);
-
-  }
+  let rand1 = shownCards.pop();
+  let rand2 = shownCards.pop();
+  let rand3 = shownCards.pop();
+ 
+  firstTerm.textContent = allCards[rand1].term;
+  firstDef.textContent = allCards[rand1].definition;
+  secondTerm.textContent = allCards[rand2].term;
+  secondDef.textContent = allCards[rand2].definition;
+  thirdTerm.textContent = allCards[rand3].term;
+  thirdDef.textContent = allCards[rand3].definition;
 }
+
+function handleClick(event) {
+
+  renderCards();
+}
+//button listener on html
+button.addEventListener('click', handleClick);
 
 renderCards();
