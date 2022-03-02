@@ -16,6 +16,7 @@ function Term(term, definition, question, wrongAnswers){
   allCards.push(this);
 
 }
+
 new Term ('For loop', 'A For Loop iterates through items in an array\, and is used to run the same code many times. For loops consist of 3 optional expressions :initialization, condition, finalExpression followed by a code block', 'What is a for loop?', ['wrong answer 1', 'wrong answer 2', 'wrong answer 3']);
 
 new Term ('While loop', 'A While Loop is a loop that iterates through the elements of the array, while a certain crtieria evealuates as true. Once the criteria evaluates as false, the loop breaks', 'What is a while loop?', ['wrong answer 1', 'wrong answer 2', 'wrong answer 3']);
