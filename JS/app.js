@@ -49,11 +49,29 @@ function handleClick(event) {
 
   renderCards();
 }
-//button listener on html
+// button listener on html
 button.addEventListener('click', handleClick);
 
 renderCards();
 
 ///////////////////test page
 
-let testForm = document.getElementById('test-form');
+// let testForm = document.getElementById('test-form');
+
+// let quizQ = document.getElementById('question');
+// let quizCorrectAnswer = document.getElementById('allCards.definition');
+// let wrongAOne = document.getElementById(allCards.wrongAnswers[0]);
+// let wrongATwo = document.getElementById(allCards.wrongAnswers[1]);
+// let wrongAThree = document.getElementById(allCards.wrongAnswers[2]);
+
+// quizQ.textContent = document.getElementById(allCards[0].question[0]);
+// console.log(allCards[0]);
+// quizQ.textContent = allCards[0].question;
+// console.log(allCards);
+
+
+
+
+
+
+// button.addEventListener('click', handleClick);
