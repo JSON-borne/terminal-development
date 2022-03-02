@@ -25,7 +25,7 @@ new Term ('Object', 'An Object is a group of variables  and functions that creat
 new Term ('Constructor', 'A Constructor is a special method that is used to create and initialize objects', 'What is a constructor?');
 new Term ('Method','A Method is a function that is used in conjuction with an object', 'What is a Method?');
 new Term ('The Push Method', 'The Push Method adds items to an array using .push','What is the Push Method?'); 
-new Term ('The Shift', 'The Shift Method removes items from the beginning of an array using .shift', 'What is the Shift Method?');
+new Term ('The Shift Method', 'The Shift Method removes items from the beginning of an array using .shift', 'What is the Shift Method?');
 new Term ('The Pop Method', 'The Pop Method removes items from the end of an array using .pop', 'What is the .push Method?');
 new Term ('The Unshift Method', 'The Unshift method adds items to the beginning of an array using .unshift', 'What is the Unshift Method?');
 new Term ('Bracket Notation', 'Bracket Notation is a way to access a property of an object which uses square brackets. With bracket notation the property name can be a string', 'What is Bracket Notation?');
