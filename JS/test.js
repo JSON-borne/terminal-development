@@ -5,6 +5,23 @@ console.log(allCards);
 // Array for questions for the test
 let testQuestions = []; //dont forget to clear this between tests
 let score = 0;
+let allScores = [];
+
+
+// local Storage for score//
+let retrievedScore = localStorage.getItem('score');//pull//
+let parsedScore = JSON.parse(retrievedScore);//parse//
+
+if (retrievedScore){
+  allScores = parsedScore;
+}
+
+console.log(retrievedScore);
+
+
+// local Storage for name//
+// let retrievedName = localStorage.getItem('nameVariable');
+// let parsedName = JSON.parse(retrievedName);
 
 let testForm = document.getElementById('test-form');
 let quizQ = document.getElementById('question');
@@ -44,10 +61,10 @@ function renderQuestion() {
 
 
 
-  if (j === 5) {
-    testForm.removeEventListener('submit', handleSubmit);
+  // if (j === 5) {
+  //   testForm.removeEventListener('submit', handleSubmit);
 
-  }
+  // }
 
 }
 
@@ -70,12 +87,27 @@ function handleSubmit(event) {
     
   }
   console.log(score);
-  renderQuestion();
+  if (j === 5) {
+    testForm.removeEventListener('submit', handleSubmit);
+    //Local Storage//
+    
+    allScores.push(score);
+    console.log(allScores);
+
+    let localScore = JSON.stringify(allScores);
+    localStorage.setItem('score', localScore);
+    
+  } else {
+    renderQuestion();
+    
+  }
 
 
+  
+  // let localName = JSON.stringify(nameVariable);
+//   localStorage.setItem('nameVariable', localName);
+ }
 
-
-};
 renderQuestion();
 
 testForm.addEventListener('submit', handleSubmit);
