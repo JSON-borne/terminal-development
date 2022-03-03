@@ -7,7 +7,7 @@ nav{
 }
 
 #titleSplash{
-  display: flex;
+display: flex;
 justify-content: space-evenly;
 font-size: 70px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,17 +34,21 @@ body{
   background-color: #003049;
 }
 
+main{
+  min-height: 79vh;
+}
+
 /* Cards */
 
 #card-elem {
-  
   display: flex; 
   justify-content: space-evenly;
+  
+
 }
 
-section{
-  margin-top: 80px;
-  margin-bottom: 180px;
+section {
+ padding-top: 50px;
 }
 
 p #card-elem{
@@ -65,11 +69,11 @@ p #card-elem{
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 200%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  height: fit-content; /*fit-content allows the elements to change sie to fit the text*/
+  
   
 }
 
@@ -85,8 +89,8 @@ p #card-elem{
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  height: 200px;
-  height: fit-content;/*fit-content allows the elements to change sie to fit the text*/
+  
+  /* height: fit-content;fit-content allows the elements to change sie to fit the text */
 
 }
 
@@ -101,7 +105,7 @@ p #card-elem{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #F77F00;
   /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
-    
+  border-radius: 20px;
   
 }
 
@@ -115,12 +119,17 @@ p #card-elem{
   background-color: #FCBF49;
   /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
   transform: rotateY(180deg);
-    
+  border-radius: 20px;
   
 }
 
 
 /* Other */
+
+#btn-container {
+  margin-top: 20%;
+  /* padding-top: 100%; */
+}
 
 #button{
   /* margin:100px;
@@ -133,9 +142,9 @@ p #card-elem{
 
 button {
   border: 0;
-  background: #FCBF49;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #F77F00 ;
+  background:#F77F00 ;
+  border-radius: 10px;
+  box-shadow: -3px 4px 0 #FCBF49 ;
   color: #003049;
   cursor: pointer;
   font: inherit;
@@ -146,24 +155,50 @@ button {
   justify-content: center;
 }
 
+
+
 button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }
 
 /* Footer Section */
-img{
-  width: 60px;
-  height: 60px;
-  margin: 5px;
-  padding: 25px;
+footer {
+  max-height: 100px;
+  display: block;
+  /* justify-content: space-between;  */
+}
+
+#logo {
+  width: 30px;
+  /* margin: 5px; */
+  
   align-content:space-between;
-  display:inline-block;
+  display: inline;
 }
 
 /* About Us */
 
 #usPg{
   color:#EAE2B7;
-  font-size: 100px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 170px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+#usPg img{
+  width: 200px;
+  border-radius: 50%;
+}
+
+#usPg div {
+  width: 250px;
+}
+
+#copyright {
+  color:#EAE2B7;
+  display: inline;
 }
