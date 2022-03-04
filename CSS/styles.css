@@ -45,6 +45,15 @@ main{
   
 }
 
+#explain {
+  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color:#FCBF49
+  
+}
+
 /* Cards */
 
 #card-elem {
@@ -249,24 +258,22 @@ footer {
 
 table {
   font-family: sans-serif;
-  font-size: 20px;
-  width: fit-content;
+  font-size: 100px;
+  width:fit-content;
   margin: auto;  
   margin-top: 50px;
   background-color: #FCBF49;
   border-radius: 10px;
-  border: solid; 
-
+  border: solid;
+  display: flex;
+  justify-content: space-evenly;
+  border:solid 1px
   
 }
 
-tr {
-  margin: 5px;
-  border: solid;
-  align-items: center;
-
-}
 
 th { 
+  justify-content: space-evenly;
   border: solid 
+  
 }
