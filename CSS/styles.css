@@ -238,14 +238,17 @@ footer {
   min-height: 65vh;
 }
 
-#test-main p{
+#userName {
+  margin-left: 750px;
+}
+#userName p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color:#FCBF49;
   font-weight: bold;
   padding-top: 20px;
 }
-#test-main h1{
+#userName h1{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color:#FCBF49
