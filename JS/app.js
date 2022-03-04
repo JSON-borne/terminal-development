@@ -52,6 +52,6 @@ function handleClick(event) {
   renderCards();
 }
 // button listener on html
-// button.addEventListener('click', handleClick);
+ button.addEventListener('click', handleClick);
 
 renderCards();
