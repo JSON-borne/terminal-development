@@ -1,5 +1,4 @@
 'use strict'
-// let indexWindow = document.getElementById('card-elem');
 
 let allCards = [];
 let allQuestions = [];
@@ -16,6 +15,8 @@ function Term(term, definition, question, answers){
   allCards.push(this);
 
 }
+
+//Passing arguments into the constructor
 
 new Term ('For loop', 'This kind of loop iterates through items in an array\, and is used to run the same code many times. These loops consist of 3 optional expressions: initialization, condition, and increment followed by a code block', 'What is a for loop?', ['This kind of loop iterates through items in an array\, and is used to run the same code many times. These loops consist of 3 optional expressions: initialization, condition, and increment followed by a code block', 'This kind of loop iterates through the elements of an array, as long as a certain crtieria evaluates as true. Once the criteria evaluates as false, the loop breaks', 'This is an object factory that passes in data and creates an instance of the desired object','A Boolean is a statement that returns only a TRUE or FALSE result' ]);
 
@@ -48,4 +49,4 @@ new Term ('Local Storage','This is a property that allows JavaScript to save key
 new Term ('Key/Value Pair', 'This is a property of an object where the key is the name of the property, and the value is the information contained within the property', 'What is a Key/Value Pair?', ['This method adds items to the end of an array', 'This is a function that is used in conjuction with an object', 'This is a property of an object where the key is the name of the property, and the value is the information contained within the property', 'This method adds items to the beginning of an array']);
 
 
-console.log(allCards);
+
