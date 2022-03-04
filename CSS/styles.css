@@ -239,8 +239,9 @@ footer {
 }
 
 #userName {
-  margin-left: 750px;
+  margin-left: 800px;
 }
+
 #userName p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
@@ -252,6 +253,14 @@ footer {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color:#FCBF49
+}
+
+#newH1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49;
+  padding: 10px;
+  text-align: center;
 }
 
 #username-Button{
