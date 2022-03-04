@@ -1,8 +1,6 @@
 'use strict'
 
 
-// let scoreTable = document.getElementById('score-table');
-
 // Array for questions for the test
 let testQuestions = []; //dont forget to clear this between tests
 let score = 0;
@@ -81,12 +79,14 @@ function handleClick(event){
   event.preventDefault();
   let string = inputValue.value;
   namesArray.push(string);
-  console.log(namesArray);
-  // let localName = JSON.stringify(namesArray);
-  // localStorage.setItem('nameVariable', localName);
-
-  myUser.parentElement.removeChild(myUser);
   
+  console.log(namesArray);
+  
+
+//removing the username form after user inputs their name
+  myUser.parentElement.removeChild(myUser);
+
+  //appending good luck text
   let nameHeader = document.createElement('h1');
   createH1.appendChild(nameHeader);
   nameHeader.textContent = `Good Luck ${namesArray[namesArray.length - 1]}`;
@@ -106,8 +106,8 @@ function handleSubmit(event) {
   console.log(score);
   if (j === 5) {
     testForm.removeEventListener('submit', handleSubmit);
+
     //Local Storage//
-    
     allScores.push(score);
     console.log(allScores);
 
@@ -123,12 +123,16 @@ function handleSubmit(event) {
   } else {
     renderQuestion();
   }
-  // let localName = JSON.stringify(nameVariable);
-  // localStorage.setItem('nameVariable', localName);
+
  }
 
 renderQuestion();
 
-myUser.addEventListener('submit', handleClick);
+
+ myUser.addEventListener('submit', handleClick);
 
 testForm.addEventListener('submit', handleSubmit);
+
+
+
+

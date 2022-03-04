@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
+
+//Creating table for results page
 let scoreTable = document.getElementById('score-table');
 
-// if (retrievedScore){
-//   allScores = parsedScore;
-// }
 
-////TABLE///
+
+////SCORE TABLE///
 function renderHeader(){
   let tableHeader1 = document.createElement('th');
   let tableHeader2 = document.createElement('th');

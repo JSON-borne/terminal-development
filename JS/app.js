@@ -1,7 +1,5 @@
 'use strict'
 
-// let createLi = document.getElementById('card-elem');
-
 //Ref to the HTML for randomly chosen cards
 let firstTerm = document.getElementById('term1');
 let firstDef = document.getElementById('def1');
@@ -32,7 +30,6 @@ function renderCards() { //function to choose randome cards to be displayed on i
     }
   }
     
-  console.log(shownCards);
 
   let rand1 = shownCards.pop();
   let rand2 = shownCards.pop();
@@ -51,7 +48,7 @@ function renderCards() { //function to choose randome cards to be displayed on i
 function handleClick(event) {
   renderCards();
 }
-// button listener on html
+// button listener on html to render new set of cards after next button is clicked
  button.addEventListener('click', handleClick);
 
 renderCards();
