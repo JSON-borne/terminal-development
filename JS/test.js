@@ -1,7 +1,7 @@
 'use strict'
 
 
-let scoreTable = document.getElementById('score-table');
+// let scoreTable = document.getElementById('score-table');
 
 // Array for questions for the test
 let testQuestions = []; //dont forget to clear this between tests
@@ -65,25 +65,7 @@ function renderQuestion() {
 
 }
 
-////TABLE///
-function renderHeader(){
-  let tableHeader = document.createElement('th');
-  let tableRow = document.createElement('tr');
 
-  scoreTable.appendChild(tableHeader);
-  tableHeader.appendChild(tableRow);
-
-  tableHeader.textContent = 'scores:';
-
-  for(let i=0; i < allScores.length; i++){
-      let scoreIndex = allScores[i];
-      let scoreValue = document.createElement('th');
-      scoreValue.textContent = scoreIndex;
-      tableHeader.appendChild(scoreValue);
-  }
-
-  
-}
 
 
 function handleSubmit(event) {
@@ -112,6 +94,7 @@ function handleSubmit(event) {
 
     let localScore = JSON.stringify(allScores);
     localStorage.setItem('score', localScore);
+    window.location.href = "results.html";
     
   } else {
     renderQuestion();
@@ -128,4 +111,4 @@ renderQuestion();
 
 testForm.addEventListener('submit', handleSubmit);
 
-renderHeader();
+
