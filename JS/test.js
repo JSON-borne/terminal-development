@@ -1,6 +1,7 @@
 'use strict'
 
-console.log(allCards);
+
+let scoreTable = document.getElementById('score-table');
 
 // Array for questions for the test
 let testQuestions = []; //dont forget to clear this between tests
@@ -15,9 +16,6 @@ let parsedScore = JSON.parse(retrievedScore);//parse//
 if (retrievedScore){
   allScores = parsedScore;
 }
-
-console.log(retrievedScore);
-
 
 // local Storage for name//
 // let retrievedName = localStorage.getItem('nameVariable');
@@ -43,7 +41,6 @@ while (testQuestions.length < 5) {
 }
 
 //start of the function that will generate new questions after clicking submit
-console.log(testQuestions);
 
 let j = 0;
 
@@ -68,6 +65,25 @@ function renderQuestion() {
 
 }
 
+////TABLE///
+function renderHeader(){
+  let tableHeader = document.createElement('th');
+  let tableRow = document.createElement('tr');
+
+  scoreTable.appendChild(tableHeader);
+  tableHeader.appendChild(tableRow);
+
+  tableHeader.textContent = 'scores:';
+
+  for(let i=0; i < allScores.length; i++){
+      let scoreIndex = allScores[i];
+      let scoreValue = document.createElement('th');
+      scoreValue.textContent = scoreIndex;
+      tableHeader.appendChild(scoreValue);
+  }
+
+  
+}
 
 
 function handleSubmit(event) {
@@ -111,3 +127,5 @@ function handleSubmit(event) {
 renderQuestion();
 
 testForm.addEventListener('submit', handleSubmit);
+
+renderHeader();
