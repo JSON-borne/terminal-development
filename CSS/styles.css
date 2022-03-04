@@ -1,0 +1,303 @@
+/*///////////////////Main//////////////////////////*/
+html {
+  padding: 20px;
+}
+nav{
+/*   width: 100px; */
+  height: 30px;
+  margin: 5px;
+  padding: 15px;
+  align-content:space-between;
+}
+
+#titleSplash{
+display: flex;
+justify-content: space-evenly;
+font-size: 70px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color:#EAE2B7
+}
+
+#linkBox{
+display: flex;
+justify-content: space-between;
+font-size: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{text-decoration: none;
+  color: #EAE2B7;
+}
+
+nav a:hover {
+  color: #F77F00;
+}
+
+div a:hover {
+  color: #F77F00;
+}
+
+body{
+  background-color: #003049;
+  min-width: 1280px;
+}
+
+main{
+  min-height: 79vh;
+}
+
+#explain {
+  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color:#FCBF49
+  
+}
+/*///////////////////Cards//////////////////////////*/
+
+
+#card-elem {
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+section {
+ padding-top: 50px;
+}
+
+p #card-elem{
+  color:#003049;
+  text-shadow: #540B0E;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 200%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb;*/
+  border: solid #FCBF49 5px;
+  color: #003049; 
+  font-size: 50px;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #F77F00;
+ 
+  border-radius: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: #003049; 
+  border: solid #f77F00 5px;
+  font-size: 30px;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FCBF49;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+/*///////////////////Other//////////////////////////*/
+
+#btn-container {
+  margin-top: 20%;
+  /* padding-top: 100%; */
+}
+
+#button{
+  /* margin:100px;
+  justify-content: center; */
+  margin-left: 46%;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+button {
+  border: 0;
+  background:#F77F00 ;
+  border-radius: 10px;
+  box-shadow: -3px 4px 0 #FCBF49 ;
+  color: #003049;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+  margin: 20px;
+  justify-content: center;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+/*///////////////////Footer//////////////////////////*/
+footer {
+  max-height: 100px;
+  display: block;
+}
+
+#logo {
+  width: 30px;
+  align-content:space-between;
+  display: inline;
+}
+
+/*///////////////////about us page//////////////////////////*/
+
+#usPg{
+  color:#EAE2B7;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 170px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#usPg img{
+  width: 200px;
+  border-radius: 50%;
+}
+
+#usPg div {
+  width: 250px;
+}
+
+#copyright {
+  color:#EAE2B7;
+  display: inline;
+}
+
+#usPg hr{
+  border: #f77F00 2px solid;
+}
+/*///////////////////Test Page//////////////////////////*/
+
+#test-form {
+  background-color: #FCBF49;
+  line-height: 2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #003049;
+  /* top | right | bottom | left */
+  margin:10px 250px 70px 250px;
+  border-radius: 10px;  
+  padding: 0 90px 0 90px;
+}
+
+#question {
+  color: #003049;
+  text-decoration: underline #003049;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#submit-btn {
+  margin-top: 40px;
+  box-shadow: -3px 4px 0 #003049;
+}
+
+#test-main {
+  min-height: 65vh;
+}
+
+#userName {
+  margin-left: 800px;
+}
+
+#userName p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#userName h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49
+}
+
+#newH1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49;
+  padding: 10px;
+  text-align: center;
+}
+
+#username-Button{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height:35px;
+}
+#myInput{
+  height: 35px;
+  background-color: #EAE2B7;
+  border-radius: 10px;
+}
+/*///////////////////Results Page//////////////////////////*/
+
+table {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 70px;
+  width:fit-content;
+  margin: auto;  
+  margin-top: 50px;
+  background-color: #FCBF49;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  border:solid 10px;
+}
+
+th { 
+  background-color: #f77F00;
+  justify-content: space-evenly;
+  border: solid 4px;
+  padding: 15px;
+  font-weight:bolder;
+}
+
+td { 
+  font-style: italic;
+  justify-content: center;
+  text-align: center;
+  border: solid 4px;
+  padding: 15px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+</head>
+
+<body>
+  <header>
+    <h2 id="titleSplash">Test Development</h2>
+    <hr>
+    <nav>
+      <div id="linkBox">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="test.html">Test</a></p>
+        <p><a href="results.html">Results</a></p>
+        <p><a href="about-us.html">About Us</a></p>
+      </div>
+    </nav>
+    <hr>
+  </header>
+
+
+  <main id="test-main">
+
+    <form id="userName" onsubmit="return false">
+      <fieldset id="name-field">
+
+        <p>Enter your name</p>
+        <input type="text" placeholder="Type Your Name Here" id="myInput" required>
+        <button id="username-Button" type="submit">Enter</button>
+
+      </fieldset>
+    </form>
+
+    <div id="newH1"></div>
+
+
+    <form id="test-form">
+      <fieldset>
+        <legend id="question"></legend>
+
+        <input type="radio" id="answerOne" name="question1">
+        <label id="aOne" for="answerOne"></label>
+        <br>
+
+        <input type="radio" id="answerTwo" name="question1">
+        <label id="aTwo" for="answerTwo"></label>
+        <br>
+
+        <input type="radio" id="answerThree" name="question1">
+        <label id="aThree" for="answerThree"></label>
+        <br>
+
+        <input type="radio" id="answerFour" name="question1">
+        <label id="aFour" for="answerFour"></label>
+        <br>
+
+        <button id="submit-btn" type="submit">Submit</button>
+
+      </fieldset>
+    </form>
+
+
+
+  </main>
+
+
+
+  <footer>
+    <hr>
+
+    <img id="logo" src="img/Logo.png" alt="Logo">
+    <p id="copyright">&copy JSONBorne_2022
+      Codefellows 201 Final Class
+    </p>
+
+
+  </footer>
+  <script src="JS/constructor.js"></script>
+  <!-- <script src="JS/app.js"></script> -->
+  <script src="JS/test.js"></script>
+</body>
+
+</html>

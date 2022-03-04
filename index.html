@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON-borne</title>
+</head>
+
+<body>
+  <header>
+    <h2 id="titleSplash">Terminal Development</h2>
+    <hr>
+    <nav>
+      <div id="linkBox">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="test.html">Test</a></p>
+        <p><a href="results.html">Results</a></p>
+        <p><a href="about-us.html">About Us</a></p>
+      </div>
+    </nav>
+    <hr>
+  </header>
+  <main>
+
+    <div id="explain">
+      <p>Welcome! On this page, you can study JavaScript Terms. <br> When you feel that you suficiently
+        learned these terms, you can test you knowledge by clicking the test link above. <br> Good Luck!
+      </p>
+    </div>
+    <section id="card-elem">
+      <!--  /* //////////////////card 1 /////////////*/ -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p id="term1"></p>
+          </div>
+          <div class="flip-card-back">
+            <p id="def1"></p>
+          </div>
+        </div>
+      </div>
+
+      <!--  /* //////////////////card 2 /////////////*/ -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p id="term2"></p>
+          </div>
+          <div class="flip-card-back">
+            <p id="def2"></p>
+          </div>
+        </div>
+      </div>
+      <!--  /* //////////////////card 3 /////////////*/ -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p id="term3"></p>
+          </div>
+          <div class="flip-card-back">
+            <p id="def3"></p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="btn-container">
+      <br>
+
+      <button id="button" type="submit">Next Card</button>
+    </div>
+
+  </main>
+  <footer>
+    <hr>
+    <img id="logo" src="img/Logo.png" alt="Logo">
+
+    <p id="copyright">&copy JSONBorne_2022
+      Codefellows 201 Final Class</p>
+  </footer>
+
+  <script src="JS/constructor.js"></script>
+  <script src="JS/app.js"></script>
+</body>
+
+</html>
