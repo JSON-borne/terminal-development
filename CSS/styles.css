@@ -1,3 +1,4 @@
+/*///////////////////Main//////////////////////////*/
 html {
   padding: 20px;
 }
@@ -29,20 +30,20 @@ a{text-decoration: none;
 }
 
 nav a:hover {
-  /* background-color: rgb(134, 75, 7); */
+  color: #F77F00;
+}
+
+div a:hover {
   color: #F77F00;
 }
 
 body{
   background-color: #003049;
-  /* max-width: 1440px;
-  margin: auto; */
   min-width: 1280px;
 }
 
 main{
   min-height: 79vh;
-  
 }
 
 #explain {
@@ -53,14 +54,12 @@ main{
   color:#FCBF49
   
 }
+/*///////////////////Cards//////////////////////////*/
 
-/* Cards */
 
 #card-elem {
   display: flex; 
   justify-content: space-evenly;
-  
-
 }
 
 section {
@@ -89,8 +88,6 @@ p #card-elem{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  
-  
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -105,9 +102,6 @@ p #card-elem{
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  
-  /* height: fit-content;fit-content allows the elements to change sie to fit the text */
-
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -117,12 +111,10 @@ p #card-elem{
   color: #003049; 
   font-size: 50px;
   padding: 30px;
-  /* text-decoration: underline; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #F77F00;
-  /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
+ 
   border-radius: 20px;
-  
 }
 
 /* Style the back side */
@@ -133,14 +125,11 @@ p #card-elem{
   padding: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #FCBF49;
-  /* background-image: linear-gradient(to right top, #7aa46e, #87b075, #94bb7d, #a2c784, #b0d38c); */
   transform: rotateY(180deg);
   border-radius: 20px;
-  
 }
 
-
-/* Other */
+/*///////////////////Other//////////////////////////*/
 
 #btn-container {
   margin-top: 20%;
@@ -170,30 +159,25 @@ button {
   margin: 20px;
   justify-content: center;
 }
-d
-
 
 button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }
 
-/* Footer Section */
+/*///////////////////Footer//////////////////////////*/
 footer {
   max-height: 100px;
   display: block;
-  /* justify-content: space-between;  */
 }
 
 #logo {
   width: 30px;
-  /* margin: 5px; */
-  
   align-content:space-between;
   display: inline;
 }
 
-/* About Us */
+/*///////////////////about us page//////////////////////////*/
 
 #usPg{
   color:#EAE2B7;
@@ -202,7 +186,6 @@ footer {
   justify-content: space-evenly;
   padding-top: 170px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
 }
 
 #usPg img{
@@ -219,7 +202,10 @@ footer {
   display: inline;
 }
 
-/* TEST PAGE */
+#usPg hr{
+  border: #f77F00 2px solid;
+}
+/*///////////////////Test Page//////////////////////////*/
 
 #test-form {
   background-color: #FCBF49;
@@ -227,14 +213,11 @@ footer {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color: #003049;
-  margin-left: 250px;
-  margin-right: 400px;
-  margin-top: 150px;
+  /* top | right | bottom | left */
+  margin:10px 250px 70px 250px;
   border-radius: 10px;  
-  padding-left: 90px;
-  
+  padding: 0 90px 0 90px;
 }
-
 
 #question {
   color: #003049;
@@ -242,6 +225,8 @@ footer {
   padding-left: 20px;
   padding-bottom: 10px;
   padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #submit-btn {
@@ -253,27 +238,57 @@ footer {
   min-height: 65vh;
 }
 
+#userName {
+  margin-left: 750px;
+}
+#userName p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#userName h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:#FCBF49
+}
 
-/* table */
+#username-Button{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height:35px;
+}
+#myInput{
+  height: 35px;
+  background-color: #EAE2B7;
+  border-radius: 10px;
+}
+/*///////////////////Results Page//////////////////////////*/
 
 table {
-  font-family: sans-serif;
-  font-size: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 70px;
   width:fit-content;
   margin: auto;  
   margin-top: 50px;
   background-color: #FCBF49;
   border-radius: 10px;
-  border: solid;
-  /* display: flex; */
   justify-content: space-evenly;
-  border:solid 1px
-  
+  border:solid 10px;
 }
 
-
 th { 
+  background-color: #f77F00;
   justify-content: space-evenly;
-  border: solid 
-  
+  border: solid 4px;
+  padding: 15px;
+  font-weight:bolder;
+}
+
+td { 
+  font-style: italic;
+  justify-content: center;
+  text-align: center;
+  border: solid 4px;
+  padding: 15px;
 }

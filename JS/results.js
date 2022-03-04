@@ -11,8 +11,8 @@ function renderHeader(){
   let tableHeader2 = document.createElement('th');
   let tableRow = document.createElement('tr');
   
-  tableHeader1.textContent = 'scores:';
-  tableHeader2.textContent = 'Names:';
+  tableHeader1.textContent = 'Scores';
+  tableHeader2.textContent = 'Names';
   scoreTable.appendChild(tableRow);
   tableRow.appendChild(tableHeader2);
   tableRow.appendChild(tableHeader1);
